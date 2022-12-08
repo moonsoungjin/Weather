@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var minTempLable: UILabel!
     @IBOutlet weak var maxTempLable: UILabel!
     @IBOutlet weak var weatherStackView: UIStackView!
+    @IBOutlet weak var weatherImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

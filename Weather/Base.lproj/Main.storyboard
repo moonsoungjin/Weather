@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ywY-vO-Pwz">
-                                <rect key="frame" x="24" y="231.33333333333331" width="345" height="143.33333333333331"/>
+                                <rect key="frame" x="24" y="231.33333333333334" width="345" height="281.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MEB-0L-K1i">
                                         <rect key="frame" x="151" y="0.0" width="43.333333333333343" height="62"/>
@@ -77,7 +77,13 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ba-Hx-ddH">
+                                        <rect key="frame" x="52.666666666666671" y="153.33333333333334" width="239.66666666666663" height="128.00000000000003"/>
+                                    </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="7ba-Hx-ddH" firstAttribute="leading" secondItem="ywY-vO-Pwz" secondAttribute="leading" constant="52.666666666666686" id="3US-tb-TTz"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -87,6 +93,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o4Y-p1-E8h" secondAttribute="trailing" constant="24" id="iTl-dZ-IzR"/>
                             <constraint firstItem="ywY-vO-Pwz" firstAttribute="top" secondItem="lBi-OM-Z58" secondAttribute="bottom" constant="50" id="oal-Kw-9pd"/>
                             <constraint firstItem="lBi-OM-Z58" firstAttribute="centerX" secondItem="o4Y-p1-E8h" secondAttribute="centerX" id="ojq-Wb-R2w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ywY-vO-Pwz" secondAttribute="bottom" constant="305.33333333333337" id="pgr-P8-PqO"/>
                             <constraint firstItem="o4Y-p1-E8h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="ryN-fd-uaz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ywY-vO-Pwz" secondAttribute="trailing" constant="24" id="wBv-5S-Sw9"/>
                             <constraint firstItem="o4Y-p1-E8h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="x1H-Eh-bRG"/>
@@ -100,12 +107,13 @@
                         <outlet property="minTempLable" destination="aJH-nB-pJY" id="nVT-xO-xcA"/>
                         <outlet property="tempLable" destination="Wss-kp-tBA" id="tWg-U5-XyD"/>
                         <outlet property="weatherDescriptionLable" destination="yjY-pE-oEZ" id="msR-Zy-E0D"/>
+                        <outlet property="weatherImageView" destination="7ba-Hx-ddH" id="CuG-TS-n4s"/>
                         <outlet property="weatherStackView" destination="ywY-vO-Pwz" id="W9Z-ZS-w3k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-503" y="14"/>
+            <point key="canvasLocation" x="-848" y="-31"/>
         </scene>
     </scenes>
     <resources>
